@@ -87,7 +87,7 @@
             <h2>Contact Information</h2>
             <div class="contact-info">
                 <a href="mailto:benhj0909@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i> your@email.com
+                    <i class="fas fa-envelope"></i> Email
                 </a>
                 <a href="https://linkedin.com/in/jie-huang20040909" class="social-link">
                     <i class="fab fa-linkedin"></i> LinkedIn Profile
