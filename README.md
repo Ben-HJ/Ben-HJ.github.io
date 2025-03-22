@@ -163,7 +163,7 @@
                 <li>Financial risk modeling and quantitative analysis</li>
                 <li>Derivative pricing frameworks (Options, Futures, Swaps)</li>
                 <li>Portfolio optimization and performance evaluation</li>
-                <li>Statistical programming (Python, R, MATLAB)</li>
+                <li>Statistical programming (R, C++, VBA)</li>
                 <li>Technical communication and educational mentorship</li>
             </ul>
 
