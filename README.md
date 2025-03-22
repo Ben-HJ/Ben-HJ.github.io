@@ -196,8 +196,8 @@
                     <h4>Project Overview</h4>
                     <ul>
                         <li>Selected agricultural sector investor profile requiring inflation-hedged growth</li>
-                        <li>Designed multi-asset portfolio spanning fixed income (40%), equities (35%), 
-                            and commodities (25%)</li>
+                        <li>Designed multi-asset portfolio spanning fixed income (29.45%), equities (36.66%), 
+                            and commodities (33.89%)</li>
                         <li>Implemented dynamic allocation strategy with weekly rebalancing</li>
                     </ul>
 
@@ -218,7 +218,7 @@
                     </ul>
 
                     <div class="document-download">
-                        <a href="path/to/natixis-report.pdf" class="download-button" target="_blank">
+                        <a href="../desktop/Natixis.pdf" class="download-button" target="_blank">
                             <i class="fas fa-file-pdf"></i> View Competition Report
                         </a>
                     </div>
@@ -231,13 +231,10 @@
         <div class="container">
             <h2>Contact</h2>
             <p>
-                <a href="mailto:your@email.com" class="social-link">
+                <a href="mailto:benhj0909@gmail.com" class="social-link">
                     <i class="fas fa-envelope"></i> Email
                 </a><br>
-                <a href="https://github.com/yourusername" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i> GitHub
-                </a><br>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                <a href="https://linkedin.com/in/jie-huang20040909" target="_blank" class="social-link">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </p>
@@ -245,7 +242,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Huang Jie. All rights reserved.</p>
     </footer>
 
     <script>
