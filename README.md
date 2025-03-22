@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huang Jie, Ben - Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         * {
@@ -13,9 +14,8 @@
         }
 
         body {
-            line-height: 1.6;
+            line-height: 1.4;
             color: #333;
-            padding-top: 60px; /* Offset for fixed nav */
         }
 
         nav {
@@ -30,8 +30,12 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: 500;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #6b48ff;
         }
 
         .hero {
@@ -40,8 +44,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(45deg, #6b48ff, #00a8ff);
-            color: white;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: #666;
         }
 
         .container {
@@ -51,38 +65,56 @@
         }
 
         .section {
-            padding: 6rem 0;
+            padding: 4rem 0;
         }
 
-        .projects {
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-card {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
 
         .project-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            border: 1px solid #eee;
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
+        .education-timeline {
+            margin-top: 2rem;
         }
 
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2.5rem;
-            margin-top: 4rem;
+        .timeline-item {
+            padding: 1.5rem;
+            border-left: 3px solid #6b48ff;
+            margin-bottom: 1.5rem;
         }
 
-        /* Added styles for PDF section */
         .download-button {
             display: inline-block;
             padding: 12px 24px;
@@ -90,7 +122,7 @@
             color: white;
             border-radius: 5px;
             text-decoration: none;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             transition: background-color 0.3s;
         }
 
@@ -98,37 +130,11 @@
             background-color: #34495e;
         }
 
-        .download-button i {
-            margin-right: 8px;
-        }
-
-        .competition-background {
-            background: #f8f9fa;
-            padding: 1.25rem;
-            border-left: 4px solid #6b48ff;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-        }
-
-        h3 {
-            color: #6b48ff;
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        li {
-            margin-bottom: 0.75rem;
-            line-height: 1.8;
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
         }
     </style>
 </head>
@@ -136,91 +142,78 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Your Name</h1>
-            <p>Risk Management Specialist & Quantitative Analyst</p>
+            <h1>[Your Name]</h1>
+            <p>Risk Management Specialist | Quantitative Analyst</p>
+            <a href="path/to/your-resume.pdf" class="download-button" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <h2>Professional Profile</h2>
+            <h2>About Me</h2>
             <p>I am a dedicated third-year undergraduate student at The Chinese University of Hong Kong (CUHK), pursuing a major in Risk Management Science with a minor in Statistics. My academic journey has equipped me with robust quantitative skills in portfolio evaluation methodologies, derivative pricing models, and statistical analysis, with particular interest in their applications to financial market dynamics.</p>
-
             <p>Currently serving as a mathematics and statistics tutor at SOIN Limited, I have honed my ability to communicate complex analytical concepts to diverse audiences. This experience has strengthened my capacity for technical communication and individualized instruction, while fostering collaborative problem-solving skills.</p>
-
             <p>My practical experience includes participation in the prestigious Natixis Investment Challenge, where I collaborated with team members to develop and optimize investment portfolios under dynamic market conditions. This hands-on competition enhanced my understanding of risk-return tradeoffs, asset allocation strategies, and performance measurement techniques.</p>
-
-            <h3>Core Competencies</h3>
-            <ul>
-                <li>Financial risk modeling and quantitative analysis</li>
-                <li>Derivative pricing frameworks (Options, Futures, Swaps)</li>
-                <li>Portfolio optimization and performance evaluation</li>
-                <li>Statistical programming (Python, R, MATLAB)</li>
-                <li>Technical communication and educational mentorship</li>
-            </ul>
-
-            <h3>Professional Orientation</h3>
-            <p>I am passionate about bridging theoretical risk management concepts with practical financial solutions. My academic pursuits and extracurricular engagements have cultivated a strong foundation in:</p>
-            <ul>
-                <li>Modern portfolio theory applications</li>
-                <li>Financial derivatives market mechanisms</li>
-                <li>Data-driven decision making in uncertain environments</li>
-            </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Quantitative Analysis</h3>
+                    <p>Portfolio optimization, Risk modeling, Derivative pricing</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, R, MATLAB, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Financial Tools</h3>
+                    <p>Bloomberg Terminal, Excel VBA, Tableau</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Risk Management</h3>
+                    <p>VaR, CVaR, Stress testing, Scenario analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="projects">
         <div class="container">
-            <h2>Competition Experience</h2>
-            
-            <div class="projects">
+            <h2>Projects & Competitions</h2>
+            <div class="projects-grid">
                 <div class="project-card">
                     <h3>Natixis Investment Challenge 2023</h3>
-                    <p class="competition-background">
-                        <strong>Competition Background:</strong> 
-                        The Natixis Investment Challenge is an international portfolio management competition 
-                        where participants construct and manage virtual investment portfolios under realistic 
-                        market constraints. Competitors employ sophisticated financial strategies while 
-                        adhering to real-world regulatory frameworks and risk parameters.
-                    </p>
+                    <p>Developed multi-asset portfolio for agricultural sector investor, implementing momentum strategies and risk parity principles.</p>
+                    <a href="path/to/your-file.pdf" class="download-button" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h4>Project Overview</h4>
-                    <ul>
-                        <li>Selected agricultural sector investor profile requiring inflation-hedged growth</li>
-                        <li>Designed multi-asset portfolio spanning fixed income (40%), equities (35%), 
-                            and commodities (25%)</li>
-                        <li>Implemented dynamic allocation strategy with weekly rebalancing</li>
-                    </ul>
-
-                    <h4>Key Responsibilities & Strategies</h4>
-                    <ul>
-                        <li>Led commodities allocation using futures contracts (corn, wheat, soybean)</li>
-                        <li>Developed momentum-based entry/exit signals using 50-200 day moving averages</li>
-                        <li>Conducted historical backtesting (2015-2022) with Python-based simulation</li>
-                        <li>Applied risk parity principles for volatility targeting across asset classes</li>
-                        <li>Integrated macroeconomic analysis for sector rotation timing</li>
-                    </ul>
-
-                    <h4>Technical Implementation</h4>
-                    <ul>
-                        <li>Portfolio optimization: Black-Litterman model with views on commodity supercycle</li>
-                        <li>Risk management: CVaR constraints at 95% confidence level</li>
-                        <li>Performance benchmarking against Bloomberg Agriculture Index</li>
-                    </ul>
-
-                    <div class="document-download">
-                        <a href="path/to/natixis-report.pdf" class="download-button" target="_blank">
-                            <i class="fas fa-file-pdf"></i> View Competition Report
-                        </a>
-                    </div>
+    <section class="section" id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <h3>The Chinese University of Hong Kong</h3>
+                    <p>BSc in Risk Management Science, Minor in Statistics</p>
+                    <p>2021 - Present</p>
                 </div>
             </div>
         </div>
@@ -228,7 +221,7 @@
 
     <section class="section" id="contact">
         <div class="container">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <p>
                 <a href="mailto:your@email.com" class="social-link">
                     <i class="fas fa-envelope"></i> Email
@@ -244,11 +237,11 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
     </footer>
 
     <script>
-        // Smooth scrolling
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -256,16 +249,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Mobile menu toggle
-        const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.style.backgroundColor = 'rgba(51, 51, 51, 0.95)';
-            } else {
-                nav.style.backgroundColor = '#333';
-            }
         });
     </script>
 </body>
