@@ -210,7 +210,7 @@
                     <p>Portfolio optimization, Risk modeling, Derivative pricing</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Programming</h3>
+                    <h3>Programming Languages</h3>
                     <p>R, C++</p>
                 </div>
                 <div class="skill-card">
