@@ -218,7 +218,7 @@
                     </ul>
 
                     <div class="document-download">
-                        <a href="iCloud Drive/Desktop/Natixis.pdf" class="download-button" target="_blank">
+                        <a href="/Natixis.pdf" class="download-button" target="_blank">
                             <i class="fas fa-file-pdf"></i> View Competition Report
                         </a>
                     </div>
