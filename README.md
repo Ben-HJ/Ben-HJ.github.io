@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', sans-serif;
         }
 
         body {
@@ -64,7 +64,7 @@
     <header class="name-header">
         <h1>Huang Jie, Ben</h1>
         <p>Risk Management Specialist</p>
-        <a href="projects.html" class="nav-button">View Projects</a>
+        <a href="project" class="nav-button">View Projects</a>
     </header>
 
     <section class="section" id="about">
