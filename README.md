@@ -219,7 +219,7 @@
                 </div>
                 <div class="skill-card">
                     <h3>Risk Management</h3>
-                    <p>VaR, CVaR, Stress testing, Scenario analysis</p>
+                    <p>VaR, Stochastic Calculus</p>
                 </div>
             </div>
         </div>
