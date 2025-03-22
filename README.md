@@ -62,7 +62,7 @@
 </head>
 <body>
     <header class="name-header">
-        <h1>Your Name</h1>
+        <h1>Huang Jie, Ben</h1>
         <p>Risk Management Specialist</p>
         <a href="projects.html" class="nav-button">View Projects</a>
     </header>
