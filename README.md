@@ -186,8 +186,8 @@
         <div class="hero-content">
             <h1>Huang Jie, Ben</h1>
             <p>Risk Management Specialist</p>
-            <a href="HuangJie_CV.pdf" class="download-button" download>
-                <i class="fas fa-download"></i> Download Resume
+            <a href="HuangJie_CV.pdf" class="download-button" target="_blank">
+                <i class="fas fa-file-pdf"></i> View Resume
             </a>
         </div>
     </section>
