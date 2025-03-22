@@ -206,19 +206,23 @@
             <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Quantitative Analysis</h3>
+                    <h3>Quantitative 
+                        Analysis</h3>
                     <p>Portfolio optimization, Risk modeling, Derivative pricing</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Programming Languages</h3>
+                    <h3>Programming 
+                        Languages</h3>
                     <p>R, C++</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Financial Tools</h3>
+                    <h3>Financial 
+                        Tools</h3>
                     <p>Excel VBA</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Risk Management</h3>
+                    <h3>Risk 
+                        Management</h3>
                     <p>VaR, Stochastic Calculus</p>
                 </div>
             </div>
