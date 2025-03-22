@@ -184,8 +184,8 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>[Your Name]</h1>
-            <p>Risk Management Specialist | Quantitative Analyst</p>
+            <h1>Huang Jie, Ben</h1>
+            <p>Risk Management Specialist</p>
             <a href="path/to/your-resume.pdf" class="download-button" download>
                 <i class="fas fa-download"></i> Download Resume
             </a>
@@ -230,7 +230,7 @@
             <h2>Projects & Competitions</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Natixis Investment Challenge 2023</h3>
+                    <h3>Investment Strategy Challenge 2024</h3>
                     <p>Developed multi-asset portfolio for agricultural sector investor, implementing momentum strategies and risk parity principles.</p>
                     <a href="Natixis.pdf" class="download-button" target="_blank">
                         <i class="fas fa-file-pdf"></i> View Report
