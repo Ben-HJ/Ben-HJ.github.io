@@ -9,91 +9,264 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Times New Roman', sans-serif;
+            font-family: 'Arial', sans-serif;
         }
 
         body {
-            line-height: 1.4;
+            line-height: 1.6;
             color: #333;
+            padding-top: 60px; /* Offset for fixed nav */
         }
 
-        .name-header {
+        nav {
+            background: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        .name-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #6b48ff, #00a8ff);
+            color: white;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 4rem 2rem;
         }
 
         .section {
-            padding: 2rem 0;
+            padding: 6rem 0;
         }
 
-        .nav-button {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background-color: #6b48ff;
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #333;
             color: white;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 1rem;
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 4rem;
         }
 
-        .contact-info {
+        /* Added styles for PDF section */
+        .download-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
             margin-top: 1.5rem;
+            transition: background-color 0.3s;
         }
 
-        .social-link {
-            display: block;
-            margin: 0.8rem 0;
-            color: #333;
-            text-decoration: none;
+        .download-button:hover {
+            background-color: #34495e;
+        }
+
+        .download-button i {
+            margin-right: 8px;
+        }
+
+        .competition-background {
+            background: #f8f9fa;
+            padding: 1.25rem;
+            border-left: 4px solid #6b48ff;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        h3 {
+            color: #6b48ff;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
         }
     </style>
 </head>
 <body>
-    <header class="name-header">
-        <h1>Huang Jie, Ben</h1>
-        <p>Risk Management Specialist</p>
-        <a href="project" class="nav-button">View Projects</a>
-    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <p>Risk Management Specialist & Quantitative Analyst</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
             <h2>Professional Profile</h2>
             <p>I am a dedicated third-year undergraduate student at The Chinese University of Hong Kong (CUHK), pursuing a major in Risk Management Science with a minor in Statistics. My academic journey has equipped me with robust quantitative skills in portfolio evaluation methodologies, derivative pricing models, and statistical analysis, with particular interest in their applications to financial market dynamics.</p>
 
-            <h3 style="margin-top: 1.5rem;">Core Competencies</h3>
-            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+            <p>Currently serving as a mathematics and statistics tutor at SOIN Limited, I have honed my ability to communicate complex analytical concepts to diverse audiences. This experience has strengthened my capacity for technical communication and individualized instruction, while fostering collaborative problem-solving skills.</p>
+
+            <p>My practical experience includes participation in the prestigious Natixis Investment Challenge, where I collaborated with team members to develop and optimize investment portfolios under dynamic market conditions. This hands-on competition enhanced my understanding of risk-return tradeoffs, asset allocation strategies, and performance measurement techniques.</p>
+
+            <h3>Core Competencies</h3>
+            <ul>
                 <li>Financial risk modeling and quantitative analysis</li>
                 <li>Derivative pricing frameworks (Options, Futures, Swaps)</li>
                 <li>Portfolio optimization and performance evaluation</li>
-                <li>Statistical programming (C++, R, VBA)</li>
+                <li>Statistical programming (Python, R, MATLAB)</li>
+                <li>Technical communication and educational mentorship</li>
             </ul>
+
+            <h3>Professional Orientation</h3>
+            <p>I am passionate about bridging theoretical risk management concepts with practical financial solutions. My academic pursuits and extracurricular engagements have cultivated a strong foundation in:</p>
+            <ul>
+                <li>Modern portfolio theory applications</li>
+                <li>Financial derivatives market mechanisms</li>
+                <li>Data-driven decision making in uncertain environments</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2>Competition Experience</h2>
+            
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Natixis Investment Challenge 2023</h3>
+                    <p class="competition-background">
+                        <strong>Competition Background:</strong> 
+                        The Natixis Investment Challenge is an international portfolio management competition 
+                        where participants construct and manage virtual investment portfolios under realistic 
+                        market constraints. Competitors employ sophisticated financial strategies while 
+                        adhering to real-world regulatory frameworks and risk parameters.
+                    </p>
+
+                    <h4>Project Overview</h4>
+                    <ul>
+                        <li>Selected agricultural sector investor profile requiring inflation-hedged growth</li>
+                        <li>Designed multi-asset portfolio spanning fixed income (40%), equities (35%), 
+                            and commodities (25%)</li>
+                        <li>Implemented dynamic allocation strategy with weekly rebalancing</li>
+                    </ul>
+
+                    <h4>Key Responsibilities & Strategies</h4>
+                    <ul>
+                        <li>Led commodities allocation using futures contracts (corn, wheat, soybean)</li>
+                        <li>Developed momentum-based entry/exit signals using 50-200 day moving averages</li>
+                        <li>Conducted historical backtesting (2015-2022) with Python-based simulation</li>
+                        <li>Applied risk parity principles for volatility targeting across asset classes</li>
+                        <li>Integrated macroeconomic analysis for sector rotation timing</li>
+                    </ul>
+
+                    <h4>Technical Implementation</h4>
+                    <ul>
+                        <li>Portfolio optimization: Black-Litterman model with views on commodity supercycle</li>
+                        <li>Risk management: CVaR constraints at 95% confidence level</li>
+                        <li>Performance benchmarking against Bloomberg Agriculture Index</li>
+                    </ul>
+
+                    <div class="document-download">
+                        <a href="path/to/natixis-report.pdf" class="download-button" target="_blank">
+                            <i class="fas fa-file-pdf"></i> View Competition Report
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section" id="contact">
         <div class="container">
-            <h2>Contact Information</h2>
-            <div class="contact-info">
-                <a href="mailto:benhj0909@gmail.com" class="social-link">
+            <h2>Contact</h2>
+            <p>
+                <a href="mailto:your@email.com" class="social-link">
                     <i class="fas fa-envelope"></i> Email
+                </a><br>
+                <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a><br>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://linkedin.com/in/jie-huang20040909" class="social-link">
-                    <i class="fab fa-linkedin"></i> LinkedIn Profile
-                </a>
-            </div>
+            </p>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.backgroundColor = 'rgba(51, 51, 51, 0.95)';
+            } else {
+                nav.style.backgroundColor = '#333';
+            }
+        });
+    </script>
 </body>
 </html>
