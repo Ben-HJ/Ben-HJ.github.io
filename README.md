@@ -247,7 +247,7 @@
                 <div class="timeline-item">
                     <h3>The Chinese University of Hong Kong</h3>
                     <p>BSc in Risk Management Science, Minor in Statistics</p>
-                    <p>2021 - Present</p>
+                    <p>2022 - Present</p>
                 </div>
             </div>
         </div>
